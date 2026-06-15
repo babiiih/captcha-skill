@@ -202,7 +202,7 @@ def solve_with_hermes_cli(
         t0 = time.time()
         try:
             proc = subprocess.run(
-                ["timplexz", "chat", "-q", query, "--image", tmp_path, "-Q"],
+                ["hermes", "chat", "-q", query, "--image", tmp_path, "-Q"],
                 capture_output=True,
                 text=True,
                 timeout=timeout_s,
