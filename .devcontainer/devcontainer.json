@@ -1,0 +1,5 @@
+{
+    "name": "xai-register",
+    "postCreateCommand": "cd /workspaces/captcha-skill && tar -xzf xai-register.tar.gz 2>/dev/null; pip install curl_cffi requests -q 2>/dev/null; echo 'SETUP_DONE' > /tmp/xai_ready.txt",
+    "remoteUser": "codespace"
+}
